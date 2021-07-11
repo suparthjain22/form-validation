@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Welcome To Login Form</title>
+
+  <link href="./style.css" rel="stylesheet" />
+  </head>
+
+	<body>
+	<!-- Main div code -->
+	<div id="main">
+    <button class="open-button" onclick="openForm()" style="height: 50px; width:100%; background-color: tan; font-weight: 600;font-size: 25px;">Open/Close Form</button>
+   
+	<div class="h-tag">
+	<h1 style="text-align: center;">Login to your Account</h1>
+  
+	</div>
+ 
+	<div class="login" id="form1" style="display: none;">
+    <form
+    name="regForm"
+    onsubmit="return myFunction()"
+    method="get"
+    action="/submit.html"
+  >
+    <input
+      placeholder="Enter your username or email.."
+      id="username"
+      type="text"
+      name="username" class="input"
+    />
+    <span
+      style="display: none; color:whitesmoke; text-align: center"
+      id="error-username"
+    ></span>
+    <input
+      placeholder="Enter your password.."
+      id="password"
+      type="password"
+      name="password" class="input"
+    />
+    <span
+      style="display: none; color: whitesmoke; text-align: center"
+      id="error-password"
+    ></span>
+    <div class="buttons">
+      <button class="button1" id="login" type="submit">Login</button>
+      <button class="button2" type="reset">Reset</button>
+    </div>
+  </form>
+	</div>
+  	 <!-- login box div ending here.. -->
+	</div>
+	<!-- Main div ending here... -->
+  <script src="app.js"></script> 
+  </body>
+  </html>
